@@ -74,8 +74,8 @@ pspd = function(q, fit, linear=TRUE)
 	}
 	
 	# interior values
-	midx <-  lowerThresh <= ppx & ppx <= upperThresh
-    xm <- as.numeric(ppx[midx])
+	midx <-  lowerThresh <= x & x <= upperThresh
+    xm <- as.numeric(x[midx])
     nm <- length(xm)
 
 	# The kernel estimation is done on all the data points so we must truncate...
@@ -125,37 +125,38 @@ pspd = function(q, fit, linear=TRUE)
     # this is the estimate of CDF at upper threshold:
     p.upper <- ppz[midend - 1] + (ppz[midend]-ppz[midend - 1] )*(upperThresh - ppx[midend-1])/(ppx[midend]- ppx[midend-1])
     p.lower <- ppz[midstart] + (ppz[midstart + 1]-ppz[midstart] )*(lowerThresh - ppx[midstart])/(ppx[midstart + 1]- ppx[midstart])
-    upper.tail.x <- ppx > upperThresh
-    lower.tail.x <- ppx < lowerThresh
+    upper.tail.x <- x > upperThresh
+    lower.tail.x <- x < lowerThresh
     k <- upperPar[1]
     a <- upperPar[2]
     b <- upperThresh
-    if(length(ppx[ppx>upperThresh])!=0)
+    if(length(x[x>upperThresh])!=0)
     {
-    	val[upper.tail.x] <- 1-(1-p.upper)*pgpd(ppx[ppx>upperThresh]-upperThresh,xi=upperPar[1],mu=0,beta=upperPar[2],lower.tail=FALSE)
-	    if (k < 0 & sum(ppx > b - a/k) > 0)
+    	val[upper.tail.x] <- 1-(1-p.upper)*pgpd(x[x>upperThresh]-upperThresh,xi=upperPar[1],mu=0,beta=upperPar[2],lower.tail=FALSE)
+	    if (k < 0 & sum(x > b - a/k) > 0)
 	    {
-	    	val[ppx > b - a/k]  <- 1.0
+	    	val[x > b - a/k]  <- 1.0
 	    }
     }
-    if(length(ppx[ppx<lowerThresh])!=0)
+    if(length(x[x<lowerThresh])!=0)
     {
     # this is the estimate of CDF at lower threshold:
 	    k <- lowerPar[1]
 	    a <- lowerPar[2]
 	    b <- lowerThresh
-		if(length(ppx[ppx<lowerThresh])==0) xlin=0 else xlin=ppx[ppx<lowerThresh]
+		if(length(x[x<lowerThresh])==0) xlin=0 else xlin=x[x<lowerThresh]
 	    val[lower.tail.x] <- p.lower*pgpd(lowerThresh-xlin,xi=lowerPar[1],mu=0,beta=lowerPar[2],lower.tail=FALSE)
-	    if (k < 0 & sum(ppx < b + a/k) > 0)
+	    if (k < 0 & sum(x < b + a/k) > 0)
 	    {
-	    	val[ppx < b + a/k]<-0
+	    	val[x < b + a/k]<-0
 	    }
     }
-    val <- approx(x=ppx,y=val, xout=sort(q),method="linear",ties="ordered")$y
+    #val <- approx(x=ppx,y=val, xout=sort(q),method="linear",ties="ordered")$y
 	retval<-val
     retval[sort.list(q)] <- val
     return(retval)
 }
+
 
 setMethod("pspd", signature(q="vector", fit="SPD",linear="logical"), .pspd)
 setMethod("pspd", signature(q="vector", fit="SPD",linear="missing"), .pspd)

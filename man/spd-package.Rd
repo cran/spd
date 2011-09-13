@@ -12,8 +12,8 @@ can easily be extended.
 \tabular{ll}{
 Package: \tab spd\cr
 Type: \tab Package\cr
-Version: \tab 1.5\cr
-Date: \tab 2011-01-25\cr
+Version: \tab 1.6\cr
+Date: \tab 2011-09-13\cr
 License: \tab GPL\cr
 LazyLoad: \tab yes\cr
 Depends: \tab methods\cr
