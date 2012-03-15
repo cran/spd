@@ -1,4 +1,5 @@
-642287939eded2afce99e48bb763c5ab *DESCRIPTION
+44a4e2d714b5e5ccca53475af86a9ddf *ChangeLog
+930e713395617e4761fcf61e316e48d1 *DESCRIPTION
 56caf229b93b5244adc2a114b673f2aa *NAMESPACE
 372b8fc6c8f26c87d83d2e4b8ba9730d *R/classes-spd.R
 e19900788783638cc81378448955bdc1 *R/methods-GPD.R
@@ -9,7 +10,7 @@ b8ae4a9ecf1395baa2ffaf1d1e8147da *R/misc-spd.R
 e8e4e14ee7c9d8517bf2b362421df661 *man/GPDFIT-class.Rd
 41ab9df79eca3f650b32fe2eebdff6e1 *man/GPDTAILS-class.Rd
 35560c208bd7546868fcb89ac6507622 *man/SPD-class.Rd
-cceb96050f76ca0754379e72d3ce624a *man/plot-methods.Rd
-e87e9837060809ce939009148422ba82 *man/spd-methods.Rd
-e424b6e9ca646495436233b62e08c9fe *man/spd-package.Rd
-0438660569ade2ca22ab64fa63cf32d9 *man/spdfit-methods.Rd
+f330ab82d3a65fd993b7a0ab4ce22b6b *man/plot-methods.Rd
+4454ce06d91d6391f7254d268703c54e *man/spd-methods.Rd
+9aa818d984a0c20adc729e013d18c7dd *man/spd-package.Rd
+d131ff54240fbe8a84e7997c0ab4c100 *man/spdfit-methods.Rd

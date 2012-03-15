@@ -1,0 +1,8 @@
+2012-03-15  Alexios Ghalanos <alexios@4dscape.com>
+	* DESCRIPTION (Version): New version is 1.7.
+	* Fix to documentation examples to avoid errors in check 
+
+2011-09-13  Alexios Ghalanos <alexios@4dscape.com>
+	* DESCRIPTION (Version): New version is 1.6.
+	* Fix to pspd method for error occuring when input vector was greater than
+	size of original fitted vector. 

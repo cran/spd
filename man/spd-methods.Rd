@@ -80,7 +80,7 @@ obtained by use of this function.
 Embrechts, P., Klueppelberg, C., Mikosch, T. (1997); \emph{Modelling Extremal Events}, Springer.\cr
 Carmona, R. (2004);\emph{Statistical Anlaysis of Financial Data in Splus},  Springer.
 }
-\examples{
+\examples{\dontrun{
 library(MASS)
 x = SP500/100
 fit=spdfit(x, upper=0.9, lower=0.1)
@@ -107,5 +107,5 @@ fit=spdfit(x, upper=0.9, lower=0.1)
    grid()
    q = seq(-0.3, 0.3, length.out = 1000)
    lines(q, pspd(q, fit), col = "darkorange",lwd=2)
-}
+}}
 \keyword{distribution}

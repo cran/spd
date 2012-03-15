@@ -12,8 +12,8 @@ can easily be extended.
 \tabular{ll}{
 Package: \tab spd\cr
 Type: \tab Package\cr
-Version: \tab 1.6\cr
-Date: \tab 2011-09-13\cr
+Version: \tab 1.7\cr
+Date: \tab 2012-03-15\cr
 License: \tab GPL\cr
 LazyLoad: \tab yes\cr
 Depends: \tab methods\cr
@@ -36,10 +36,10 @@ Carmona, R. and J. Morrisson (2001). Heavy Tails and Copulas with Evanesce, ORFE
 Carmona, R. (2001). Statistical Analysis of Financial Data, with an implementation in Splus\cr
 Embrechts, P., Klueppelberg, C., Mikosch, T. (1997); \emph{Modelling Extremal Events}, Springer
 }
-\examples{
+\examples{\dontrun{
 library(MASS)
 x<-SP500/100
 fit<-spdfit(x)
 show(fit)
-}
+}}
 

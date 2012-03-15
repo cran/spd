@@ -21,13 +21,13 @@ plot(x,y,...)
 	Valid arguments are \dQuote{ask} for interactive plotting, \dQuote{all} to plot all
 	or a number from 1 to 6 indicating the desired charts to plot.}
 }
-\examples{
+\examples{\dontrun{
 library(MASS)
 x<-SP500/100
 fit<-spdfit(x)
 plot(fit,which=1)
 # this in fact exctracts the GPDFIT object (from GPDTAILS) for which plot methods exist.
 plot(fit,which=3)
-}
+}}
 \keyword{methods}
 

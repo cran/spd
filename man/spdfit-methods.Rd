@@ -29,13 +29,13 @@ information = c("observed", "expected"), title = NULL, description = NULL, ...)
 \value{
 Returns an object of class \code{\linkS4class{SPD}}.
 }
-\examples{
+\examples{\dontrun{
 library(MASS)
 x<-SP500/100
 fit<-spdfit(x)
 show(fit)
 #plot(fit,which="all")
-}
+}}
 \keyword{methods}
 
 
