@@ -7,8 +7,9 @@
 \alias{plot,GPDTAILS,missing-method}
 \title{Method: Plotting (S4) for implemented S4 classes}
 \description{
-Locally implemented and modified methods for plotting the fit of the \code{\linkS4class{GPDFIT}} object
-(taken from package \code{fExtremes}), and the overall fit of the \code{\linkS4class{GPDTAILS}} object.
+Locally implemented and modified methods for plotting the fit of the 
+\code{\linkS4class{GPDFIT}} object (taken from package \code{fExtremes}), and 
+the overall fit of the \code{\linkS4class{GPDTAILS}} object.
 }
 \usage{
 plot(x,y,...)
@@ -18,16 +19,16 @@ plot(x,y,...)
 	\item{y}{ missing }
 	\item{...}{
 	[which] - \cr
-	Valid arguments are \dQuote{ask} for interactive plotting, \dQuote{all} to plot all
-	or a number from 1 to 6 indicating the desired charts to plot.}
+	Valid arguments are \dQuote{ask} for interactive plotting, \dQuote{all} to 
+	plot all or a number from 1 to 6 indicating the desired charts to plot.}
 }
 \examples{\dontrun{
 library(MASS)
 x<-SP500/100
 fit<-spdfit(x)
 plot(fit,which=1)
-# this in fact exctracts the GPDFIT object (from GPDTAILS) for which plot methods exist.
+# this in fact exctracts the GPDFIT object (from GPDTAILS) for which plot 
+# methods exist.
 plot(fit,which=3)
 }}
 \keyword{methods}
-

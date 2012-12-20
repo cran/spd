@@ -1,6 +1,6 @@
 #################################################################################
 ##
-##   R package spd by Alexios Ghalanos Copyright (C) 2008
+##   R package spd by Alexios Ghalanos Copyright (C) 2008-2013
 ##   This file is part of the R package spd.
 ##
 ##   The R package spd is free software: you can redistribute it and/or modify
@@ -355,14 +355,14 @@ qspd = function(p, fit, linear=TRUE)
 setMethod("qspd", signature(p="vector", fit="SPD",linear="logical"), .qspd)
 setMethod("qspd", signature(p="vector", fit="SPD",linear="missing"), .qspd)
 # ------------------------------------------------------------------------------
-rspd = function(n, fit, linear=TRUE, rseed=0)
+rspd = function(n, fit, linear=TRUE)
 {
 	UseMethod("rspd")
 }
 
-.rspd<-function(n, fit, linear=TRUE, rseed=0)
+.rspd<-function(n, fit, linear=TRUE)
 {
-	if(rseed!=0) set.seed(rseed)
+	# if(rseed!=0) set.seed(rseed)
     # use the inverse CDF method
     z<-runif(n)
     retval<-.qspd(z, fit, linear)

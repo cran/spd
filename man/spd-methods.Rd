@@ -21,19 +21,20 @@
 \alias{qspd,vector,SPD,missing-method}
 \title{Method: Semi-Parametric Distribution}
 \description{
-Density, Distribution, Quantile and Random Number Generation methods for the Semi-Parametric Distribution.
+Density, Distribution, Quantile and Random Number Generation methods for the 
+Semi-Parametric Distribution.
 }
 \usage{
 dspd(x, fit, linear)
 pspd(q, fit, linear)
 qspd(p, fit, linear)
-rspd(n, fit, linear,rseed)
+rspd(n, fit, linear)
 }
 \arguments{
     
     \item{n}{
         [rspd] - \cr
-        the number of random deviates to be generated from fitted 	  distribution.
+        the number of random deviates to be generated from fitted distribution.
         } 
     \item{p}{
         a vector of probability levels, the desired probability for the 
@@ -49,12 +50,9 @@ rspd(n, fit, linear,rseed)
         }
     \item{linear}{
 	[all] - \cr
-        logical, if TRUE interior smoothing function uses linear interpolation rather than constant.
-        }
-     \item{rseed}{
-        [rspd] - \cr
-	numeric, optional seed value to initiate the random number generator.
-	}
+        logical, if TRUE interior smoothing function uses linear interpolation 
+        rather than constant.
+     }
 }
 \value{
     All values are numeric vectors: \cr
@@ -64,10 +62,11 @@ rspd(n, fit, linear,rseed)
     \code{r*} generates random deviates.
 }
 \note{
-The density is computed using the generalized pareto distribution in the tails, while for the middle, the density
-is computed by using a smooth gradient approach. Interpolation is used to splice together the ends with the middle portion,
-providing for an approximate piecewise constant density function. As such, caution should be used when interpreting results
-obtained by use of this function.
+The density is computed using the generalized pareto distribution in the tails, 
+while for the middle, the density is computed by using a smooth gradient approach. 
+Interpolation is used to splice together the ends with the middle portion,
+providing for an approximate piecewise constant density function. As such, 
+caution should be used when interpreting results obtained by use of this function.
 }
 \author{
     Alec Stephenson for the functions from R\`s \code{evd} package, \cr
@@ -77,8 +76,10 @@ obtained by use of this function.
     Alexios Ghalanos for the SPD Implementation, \cr
 }
 \references{
-Embrechts, P., Klueppelberg, C., Mikosch, T. (1997); \emph{Modelling Extremal Events}, Springer.\cr
-Carmona, R. (2004);\emph{Statistical Anlaysis of Financial Data in Splus},  Springer.
+Embrechts, P., Klueppelberg, C., Mikosch, T. (1997); \emph{Modelling Extremal 
+Events}, Springer.\cr
+Carmona, R. (2004);\emph{Statistical Anlaysis of Financial Data in Splus}, 
+Springer.
 }
 \examples{\dontrun{
 library(MASS)

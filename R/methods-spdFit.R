@@ -1,6 +1,6 @@
 #################################################################################
 ##
-##   R package spd by Alexios Ghalanos Copyright (C) 2008
+##   R package spd by Alexios Ghalanos Copyright (C) 2008-2013
 ##   This file is part of the R package spd.
 ##
 ##   The R package spd is free software: you can redistribute it and/or modify

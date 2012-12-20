@@ -5,8 +5,9 @@
 \alias{show,GPDFIT-method}
 
 \title{Class: Generalized Pareto Distribution}
-\description{ Locally implemented and slightly modified class for the generalized pareto distribution (gpd) fit,
-borrowed from package \code{fExtremes}. Created on modelling the tails of the data by \code{\link{spdfit}}}
+\description{ Locally implemented and slightly modified class for the generalized 
+pareto distribution (gpd) fit, borrowed from package \code{fExtremes}. Created 
+on modelling the tails of the data by \code{\link{spdfit}}}
 \section{Objects from the Class}{
 Objects of this class cannot be created by user as the methods are not exported.
 }
@@ -30,10 +31,14 @@ Diethelm Wuertz for the functions from R\`s \code{"fExtremes-package"},
 M.P.Wand and M.C.Jones for the functions from R\`s \code{"KernSmooth-package"},
 Alexios Ghalanos for this package.}
 \references{
-Carmona, R. and J. Morrisson (2001). Heavy Tails and Copulas with Evanesce, ORFE Tech. Report, Princeton University\cr
-Carmona, R. (2001). Statistical Analysis of Financial Data, with an implementation in Splus\cr
-Embrechts, P., Klueppelberg, C., Mikosch, T. (1997); \emph{Modelling Extremal Events}, Springer
+Carmona, R. and J. Morrisson (2001). Heavy Tails and Copulas with Evanesce, 
+ORFE Tech. Report, Princeton University\cr
+Carmona, R. (2001). Statistical Analysis of Financial Data, with an 
+implementation in Splus\cr
+Embrechts, P., Klueppelberg, C., Mikosch, T. (1997); \emph{Modelling Extremal 
+Events}, Springer
 }
-\note{ S3 plot method exists which provides for visual inspection of the fit and is 
-called by the higher level S3 plot method of the \code{\linkS4class{SPD}} class}
+\note{ S3 plot method exists which provides for visual inspection of the fit 
+and is called by the higher level S3 plot method of the \code{\linkS4class{SPD}} 
+class}
 \keyword{classes}

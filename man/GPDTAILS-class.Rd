@@ -5,8 +5,8 @@
 \title{Class: GPDTAILS}
 \description{Class: SPD with Generalized Pareto Distribution (GPD) Tails }
 \section{Objects from the Class}{
-Objects can be created by calling \code{\link{spdfit}}. The main implemented class of the spd package holding
-the details of the fitted object with gpd tails.}
+Objects can be created by calling \code{\link{spdfit}}. The main implemented 
+class of the spd package holding the details of the fitted object with gpd tails.}
 \section{Slots}{
 	 \describe{
     \item{\code{call}:}{...}
@@ -23,7 +23,9 @@ the details of the fitted object with gpd tails.}
 \section{Extends}{
 Class \code{\linkS4class{SPD}}, directly.
 }
-\references{Carmona, R. and J. Morrisson (2001). Heavy Tails and Copulas with Evanesce, ORFE Tech. Report, Princeton University\cr
-Carmona, R. (2001). Statistical Analysis of Financial Data, with an implementation in Splus}
+\references{Carmona, R. and J. Morrisson (2001). Heavy Tails and Copulas with 
+Evanesce, ORFE Tech. Report, Princeton University\cr
+Carmona, R. (2001). Statistical Analysis of Financial Data, with an 
+implementation in Splus}
 \author{ Alexios Ghalanos }
 \keyword{classes}
