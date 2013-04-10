@@ -33,9 +33,6 @@ spdfit<-function(data, upper = 0.9, lower = 0.1, tailfit="GPD", type = c("mle", 
 }
 
 setMethod(f="spdfit", definition=.spdfit)
-setMethod(f="spdfit", definition=.spdfit)
-setMethod(f="spdfit", definition=.spdfit)
-
 #-------------------------------------------------------------------------------------------------------------------
 .gpdtails<-function(data, upper = 0.9, lower = 0.1, tailfit="GPD", type = c("mle", "pwm"), kernelfit = c("normal","box","epanech","biweight","triweight"), information = c("observed", "expected"), title = NULL, description = NULL,...)
 {

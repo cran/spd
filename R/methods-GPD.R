@@ -24,8 +24,8 @@ gpdfit<-function(x, u = quantile(x, 0.95), type = c("mle", "pwm"),
 	UseMethod("gpdfit")
 }
 
-.gpdfit<-function(x, u = quantile(x, 0.95), type = c("mle", "pwm"),
-information = c("observed", "expected"), title = NULL, description = NULL, ...)
+.gpdfit = function(x, u = quantile(x, 0.95), type = c("mle", "pwm"), 
+		information = c("observed", "expected"), title = NULL, description = NULL, ...)
 {   # A function implemented by Diethelm Wuertz and included/modified by Alexios
 	# Ghalanos
 	# Description:
@@ -144,8 +144,7 @@ setMethod(f="gpdfit",definition=.gpdfit)
 
 
 #-------------------------------------------------------------------------------
-.gpdpwmFit <-
-    function (x, u)
+.gpdpwmFit <- function (x, u)
 {
     # A Copy from Evir
 

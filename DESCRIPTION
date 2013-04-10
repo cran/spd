@@ -1,19 +1,18 @@
 Package: spd
 Type: Package
 Title: Semi Parametric Distribution
-Version: 1.8
-Date: 2012-12-20
+Version: 1.9
+Date: 2013-04-10
 Author: alexios ghalanos <alexios@4dscape.com>
 Maintainer: alexios ghalanos <alexios@4dscape.com>
 Description: Semi Parametric Piecewise Distribution
 Collate: misc-spd.R classes-spd.R methods-GPD.R methods-spdFit.R
-        methods-spdDistribution.R methods-spdPlots.R zzz.R
-Depends: methods, graphics, KernSmooth
+        methods-spdDistribution.R methods-spdPlots.R
+Depends: methods
+Imports: KernSmooth
 LazyLoad: yes
 License: GPL
+Packaged: 2013-04-09 06:09:52 UTC; alexios
+NeedsCompilation: no
 Repository: CRAN
-Repository/R-Forge/Project: spd
-Repository/R-Forge/Revision: 24
-Repository/R-Forge/DateTimeStamp: 2012-12-18 09:23:51
-Date/Publication: 2012-12-18 22:04:50
-Packaged: 2012-12-18 15:17:27 UTC; rforge
+Date/Publication: 2013-04-09 10:24:08

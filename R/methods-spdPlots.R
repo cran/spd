@@ -27,7 +27,7 @@ if(missing(which)) which="ask"
 
 setMethod("plot", signature(x="GPDTAILS",y="missing"), .plot.GPDTAILS)
 
-setMethod("plot", signature(x="GPDFIT",y="missing"), .plot.GPDFIT)
+setMethod("plot", signature(x="GPDFIT", y="missing"), .plot.GPDFIT)
 #---------------------------------------------------------------------
 .interactivegpdtailsPlot = function(object, choices, plotFUN, which, ...)
 {

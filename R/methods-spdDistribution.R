@@ -158,8 +158,8 @@ pspd = function(q, fit, linear=TRUE)
 }
 
 
-setMethod("pspd", signature(q="vector", fit="SPD",linear="logical"), .pspd)
-setMethod("pspd", signature(q="vector", fit="SPD",linear="missing"), .pspd)
+setMethod("pspd", signature(q="vector", fit="SPD", linear="logical"), .pspd)
+setMethod("pspd", signature(q="vector", fit="SPD", linear="missing"), .pspd)
 # ------------------------------------------------------------------------------
 dspd <- function(x, fit, linear=TRUE)
 {
