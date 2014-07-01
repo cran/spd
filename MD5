@@ -1,7 +1,6 @@
-1d2bc5dc7910282b961306b039ab1e60 *COPYRIGHTS
 be0d679415952af7bc8d00a0521fc7cb *ChangeLog
-ae2039d6076d0144919f2ed9309cd76d *DESCRIPTION
-ecb610daf5fd0517a36197bec0dbfeaf *NAMESPACE
+19dc674b0a93a34bb2d1f88e5717f086 *DESCRIPTION
+b088adfb53e5d03111a158f11f6b5577 *NAMESPACE
 b41753d76c064a335752ce3ae1814976 *R/classes-spd.R
 42111423609d1e86c4a932e83f6095bb *R/methods-GPD.R
 967d7be00fb8bcb351ec85f31eedc6d0 *R/methods-spdDistribution.R
@@ -9,10 +8,11 @@ b41753d76c064a335752ce3ae1814976 *R/classes-spd.R
 d0812c7ba8edfc6e5a4c29269b747929 *R/methods-spdPlots.R
 e523844cd0e30b2238c6441496f5e7e9 *R/misc-spd.R
 9093585011002b493ce7bd103c9e05c3 *inst/CITATION
+1d2bc5dc7910282b961306b039ab1e60 *inst/COPYRIGHTS
 d6c7742c9e9ce62eefcfd8f9ea499a20 *man/GPDFIT-class.Rd
 a0ccd2eac9bbc559e70b1b0cd1222073 *man/GPDTAILS-class.Rd
 a7912e15a8b5f887181048b2760e0a53 *man/SPD-class.Rd
 ffb34fa0f8991f8c719cb945fb35ea21 *man/plot-methods.Rd
 9312455f288bad553edece44f184579e *man/spd-methods.Rd
-7642812a5436a7303478570855982acb *man/spd-package.Rd
-d131ff54240fbe8a84e7997c0ab4c100 *man/spdfit-methods.Rd
+90b30cd216294ebc27021c4abc0fea25 *man/spd-package.Rd
+ce4f07b982f74c88af1fddaf19367ef3 *man/spdfit-methods.Rd
