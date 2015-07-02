@@ -1,3 +1,7 @@
+2015-07-02  Alexios Ghalanos <alexios@4dscape.com>
+	* DESCRIPTION (Version): New version is 2.0-1.
+	* Fixes to pass new CRAN checks which only attach base.
+
 2013-04-10  Alexios Ghalanos <alexios@4dscape.com>
 	* DESCRIPTION (Version): New version is 1.9.
 	* Removed zzz.R
